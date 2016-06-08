@@ -19,10 +19,10 @@
 
       <?php
         include "functions.php";
+        $mitarbeiter_array = get_mitarbeiter();
 
         echo "<h2 class='small'>Bewohner Kreatief</h2>";
   
-        $mitarbeiter_array = get_mitarbeiter();
         echo "<table class='table table-hover'>";
         while ($ma = mysqli_fetch_array($mitarbeiter_array)) {
           if ($ma['status'] == 'active') {

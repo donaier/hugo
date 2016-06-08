@@ -33,7 +33,7 @@
     $dbhandle = database_connect();
 
     if ($id == null) {
-      $ma = mysqli_query($dbhandle, "SELECT * FROM clients ORDER BY status, nachname ASC");
+      $ma = mysqli_query($dbhandle, "SELECT * FROM clients ORDER BY status, name ASC");
     } else {
       $ma = mysqli_query($dbhandle, "SELECT * FROM clients WHERE id=" . $id);
       $ma = mysqli_fetch_array($ma);
