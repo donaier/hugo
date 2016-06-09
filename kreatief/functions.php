@@ -125,7 +125,7 @@
       $categories .= " OR category LIKE '%vernetzung%'";
     }
 
-    $log_query = "SELECT * FROM ma_logs WHERE mitarbeiter_id=" . $ma_id . " AND (" . $categories . ") AND ('date' BETWEEN '" . $start_date . "' AND '" . $end_date . "') ORDER BY date " . $sort_order;
+    $log_query = "SELECT * FROM ma_logs WHERE mitarbeiter_id=" . $ma_id . " AND (" . $categories . ") AND (date BETWEEN '" . $start_date . "' AND '" . $end_date . "') ORDER BY date " . $sort_order;
 
     return $log_query;
   }

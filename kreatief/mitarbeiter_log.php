@@ -221,8 +221,6 @@
         }
         $log_data = mysqli_query($dbhandle, $log_query);
 
-        echo $log_query;
-
         echo "<table class='table'>";
           while ($log = mysqli_fetch_array($log_data)) {
             echo "<tr>";
