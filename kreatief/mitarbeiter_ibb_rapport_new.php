@@ -45,7 +45,7 @@
           <div class='col-sm-10'>
             <table class='table table-condensed table-striped table-bordered text-center'>
               <tr>
-                <td></td>
+                <td class='col-sm-3'></td>
                 <th>Mo</th>
                 <th>Di</th>
                 <th>Mi</th>
@@ -133,6 +133,83 @@
                 <td><input type='checkbox' name='fr_ko'></input></td>
                 <td><input type='checkbox' name='sa_ko'></input></td>
                 <td><input type='checkbox' name='so_ko'></input></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-2 control-label'>Gespräche:</label>
+          <div class='col-sm-10'>
+            <table class='table table-condensed table-striped table-bordered text-center'>
+              <tr>
+                <td class='col-sm-3'></td>
+                <th>Mo</th>
+                <th>Di</th>
+                <th>Mi</th>
+                <th>Do</th>
+                <th>Fr</th>
+                <th>Sa</th>
+                <th>So</th>
+              </tr>
+              <tr>
+                <th>BP-Gespräch</th>
+                <td><input type='checkbox' name='mo_bp'></input></td>
+                <td><input type='checkbox' name='di_bp'></input></td>
+                <td><input type='checkbox' name='mi_bp'></input></td>
+                <td><input type='checkbox' name='do_bp'></input></td>
+                <td><input type='checkbox' name='fr_bp'></input></td>
+                <td><input type='checkbox' name='sa_bp'></input></td>
+                <td><input type='checkbox' name='so_bp'></input></td>
+              </tr>
+              <tr>
+                <th>Stao-Gespräch Intern</th>
+                <td><input type='checkbox' name='mo_stao'></input></td>
+                <td><input type='checkbox' name='di_stao'></input></td>
+                <td><input type='checkbox' name='mi_stao'></input></td>
+                <td><input type='checkbox' name='do_stao'></input></td>
+                <td><input type='checkbox' name='fr_stao'></input></td>
+                <td><input type='checkbox' name='sa_stao'></input></td>
+                <td><input type='checkbox' name='so_stao'></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungs-Gespräch</th>
+                <td><input type='checkbox' name='mo_netz'></input></td>
+                <td><input type='checkbox' name='di_netz'></input></td>
+                <td><input type='checkbox' name='mi_netz'></input></td>
+                <td><input type='checkbox' name='do_netz'></input></td>
+                <td><input type='checkbox' name='fr_netz'></input></td>
+                <td><input type='checkbox' name='sa_netz'></input></td>
+                <td><input type='checkbox' name='so_netz'></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Telefon</th>
+                <td><input type='checkbox' name='mo_vtel'></input></td>
+                <td><input type='checkbox' name='di_vtel'></input></td>
+                <td><input type='checkbox' name='mi_vtel'></input></td>
+                <td><input type='checkbox' name='do_vtel'></input></td>
+                <td><input type='checkbox' name='fr_vtel'></input></td>
+                <td><input type='checkbox' name='sa_vtel'></input></td>
+                <td><input type='checkbox' name='so_vtel'></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Mail</th>
+                <td><input type='checkbox' name='mo_vmail'></input></td>
+                <td><input type='checkbox' name='di_vmail'></input></td>
+                <td><input type='checkbox' name='mi_vmail'></input></td>
+                <td><input type='checkbox' name='do_vmail'></input></td>
+                <td><input type='checkbox' name='fr_vmail'></input></td>
+                <td><input type='checkbox' name='sa_vmail'></input></td>
+                <td><input type='checkbox' name='so_vmail'></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Sonstig</th>
+                <td><input type='checkbox' name='mo_vsonst'></input></td>
+                <td><input type='checkbox' name='di_vsonst'></input></td>
+                <td><input type='checkbox' name='mi_vsonst'></input></td>
+                <td><input type='checkbox' name='do_vsonst'></input></td>
+                <td><input type='checkbox' name='fr_vsonst'></input></td>
+                <td><input type='checkbox' name='sa_vsonst'></input></td>
+                <td><input type='checkbox' name='so_vsonst'></input></td>
               </tr>
             </table>
           </div>

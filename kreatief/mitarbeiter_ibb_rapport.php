@@ -29,6 +29,7 @@
         $ibb = get_one_ibb($_GET['ibb_id']);
 
         $medihash = unserialize($ibb['medis']);
+        $gesphash = [];
 
         echo "<h3 class='text-center'>" . $ma['vorname'] . " " . $ma['name'] . "</h3>";
       ?>
@@ -139,6 +140,180 @@
                 <td><input type='checkbox' name='fr_ko' <?php if ($medihash['fr_ko']) { echo 'checked'; } ?>></input></td>
                 <td><input type='checkbox' name='sa_ko' <?php if ($medihash['sa_ko']) { echo 'checked'; } ?>></input></td>
                 <td><input type='checkbox' name='so_ko' <?php if ($medihash['so_ko']) { echo 'checked'; } ?>></input></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-2 control-label'>Gespräche:</label>
+          <div class='col-sm-10'>
+            <table class='table table-condensed table-striped table-bordered text-center'>
+              <tr>
+                <td></td>
+                <th>Mo</th>
+                <th>Di</th>
+                <th>Mi</th>
+                <th>Do</th>
+                <th>Fr</th>
+                <th>Sa</th>
+                <th>So</th>
+              </tr>
+              <tr>
+                <th>BP-Gespräch</th>
+                <td><input type='checkbox' name='mo_bp' <?php if ($gesphash['mo_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_bp' <?php if ($gesphash['di_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_bp' <?php if ($gesphash['mi_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_bp' <?php if ($gesphash['do_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_bp' <?php if ($gesphash['fr_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_bp' <?php if ($gesphash['sa_bp']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_bp' <?php if ($gesphash['so_bp']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Stao-Gespräch Intern</th>
+                <td><input type='checkbox' name='mo_stao' <?php if ($gesphash['mo_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_stao' <?php if ($gesphash['di_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_stao' <?php if ($gesphash['mi_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_stao' <?php if ($gesphash['do_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_stao' <?php if ($gesphash['fr_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_stao' <?php if ($gesphash['sa_stao']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_stao' <?php if ($gesphash['so_stao']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungs-Gespräch</th>
+                <td><input type='checkbox' name='mo_netz' <?php if ($gesphash['mo_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_netz' <?php if ($gesphash['di_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_netz' <?php if ($gesphash['mi_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_netz' <?php if ($gesphash['do_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_netz' <?php if ($gesphash['fr_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_netz' <?php if ($gesphash['sa_netz']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_netz' <?php if ($gesphash['so_netz']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Telefon</th>
+                <td><input type='checkbox' name='mo_vtel' <?php if ($gesphash['mo_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_vtel' <?php if ($gesphash['di_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_vtel' <?php if ($gesphash['mi_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_vtel' <?php if ($gesphash['do_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_vtel' <?php if ($gesphash['fr_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_vtel' <?php if ($gesphash['sa_vtel']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_vtel' <?php if ($gesphash['so_vtel']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Mail</th>
+                <td><input type='checkbox' name='mo_vmail' <?php if ($gesphash['mo_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_vmail' <?php if ($gesphash['di_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_vmail' <?php if ($gesphash['mi_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_vmail' <?php if ($gesphash['do_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_vmail' <?php if ($gesphash['fr_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_vmail' <?php if ($gesphash['sa_vmail']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_vmail' <?php if ($gesphash['so_vmail']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Vernetzungsarbeit - Sonstig</th>
+                <td><input type='checkbox' name='mo_vsonst' <?php if ($gesphash['mo_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_vsonst' <?php if ($gesphash['di_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_vsonst' <?php if ($gesphash['mi_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_vsonst' <?php if ($gesphash['do_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_vsonst' <?php if ($gesphash['fr_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_vsonst' <?php if ($gesphash['sa_vsonst']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_vsonst' <?php if ($gesphash['so_vsonst']) { echo 'checked'; } ?>></input></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-2 control-label'>Administratives:</label>
+          <div class='col-sm-10'>
+            <table class='table table-condensed table-striped table-bordered text-center'>
+              <tr>
+                <td></td>
+                <th>Mo</th>
+                <th>Di</th>
+                <th>Mi</th>
+                <th>Do</th>
+                <th>Fr</th>
+                <th>Sa</th>
+                <th>So</th>
+              </tr>
+              <tr>
+                <th>Kardex</th>
+                <td><input type='checkbox' name='mo_kx' <?php if ($adminhash['mo_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_kx' <?php if ($adminhash['di_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_kx' <?php if ($adminhash['mi_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_kx' <?php if ($adminhash['do_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_kx' <?php if ($adminhash['fr_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_kx' <?php if ($adminhash['sa_kx']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_kx' <?php if ($adminhash['so_kx']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Verlauf</th>
+                <td><input type='checkbox' name='mo_vrl' <?php if ($adminhash['mo_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_vrl' <?php if ($adminhash['di_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_vrl' <?php if ($adminhash['mi_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_vrl' <?php if ($adminhash['do_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_vrl' <?php if ($adminhash['fr_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_vrl' <?php if ($adminhash['sa_vrl']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_vrl' <?php if ($adminhash['so_vrl']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Bericht</th>
+                <td><input type='checkbox' name='mo_ber' <?php if ($adminhash['mo_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_ber' <?php if ($adminhash['di_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_ber' <?php if ($adminhash['mi_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_ber' <?php if ($adminhash['do_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_ber' <?php if ($adminhash['fr_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_ber' <?php if ($adminhash['sa_ber']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_ber' <?php if ($adminhash['so_ber']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Geburtstagsvorbereitungen</th>
+                <td><input type='checkbox' name='mo_geb' <?php if ($adminhash['mo_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_geb' <?php if ($adminhash['di_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_geb' <?php if ($adminhash['mi_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_geb' <?php if ($adminhash['do_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_geb' <?php if ($adminhash['fr_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_geb' <?php if ($adminhash['sa_geb']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_geb' <?php if ($adminhash['so_geb']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Finanzen</th>
+                <td><input type='checkbox' name='mo_fin' <?php if ($adminhash['mo_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_fin' <?php if ($adminhash['di_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_fin' <?php if ($adminhash['mi_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_fin' <?php if ($adminhash['do_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_fin' <?php if ($adminhash['fr_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_fin' <?php if ($adminhash['sa_fin']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_fin' <?php if ($adminhash['so_fin']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Ferienplanung / Freizeitgestaltung</th>
+                <td><input type='checkbox' name='mo_fer' <?php if ($adminhash['mo_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_fer' <?php if ($adminhash['di_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_fer' <?php if ($adminhash['mi_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_fer' <?php if ($adminhash['do_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_fer' <?php if ($adminhash['fr_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_fer' <?php if ($adminhash['sa_fer']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_fer' <?php if ($adminhash['so_fer']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Erscheinungsbild</th>
+                <td><input type='checkbox' name='mo_ersch' <?php if ($adminhash['mo_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_ersch' <?php if ($adminhash['di_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_ersch' <?php if ($adminhash['mi_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_ersch' <?php if ($adminhash['do_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_ersch' <?php if ($adminhash['fr_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_ersch' <?php if ($adminhash['sa_ersch']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_ersch' <?php if ($adminhash['so_ersch']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Zimmerordnung</th>
+                <td><input type='checkbox' name='mo_zimm' <?php if ($adminhash['mo_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_zimm' <?php if ($adminhash['di_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_zimm' <?php if ($adminhash['mi_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_zimm' <?php if ($adminhash['do_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_zimm' <?php if ($adminhash['fr_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_zimm' <?php if ($adminhash['sa_zimm']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_zimm' <?php if ($adminhash['so_zimm']) { echo 'checked'; } ?>></input></td>
               </tr>
             </table>
           </div>
