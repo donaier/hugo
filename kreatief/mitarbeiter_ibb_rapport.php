@@ -110,6 +110,36 @@
                 <td><input type='checkbox' name='sa_re' <?php if ($medihash['sa_re']) { echo 'checked'; } ?>></input></td>
                 <td><input type='checkbox' name='so_re' <?php if ($medihash['so_re']) { echo 'checked'; } ?>></input></td>
               </tr>
+              <tr>
+                <th>Richten</th>
+                <td><input type='checkbox' name='mo_ri' <?php if ($medihash['mo_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_ri' <?php if ($medihash['di_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_ri' <?php if ($medihash['mi_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_ri' <?php if ($medihash['do_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_ri' <?php if ($medihash['fr_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_ri' <?php if ($medihash['sa_ri']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_ri' <?php if ($medihash['so_ri']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Bestellen</th>
+                <td><input type='checkbox' name='mo_be' <?php if ($medihash['mo_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_be' <?php if ($medihash['di_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_be' <?php if ($medihash['mi_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_be' <?php if ($medihash['do_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_be' <?php if ($medihash['fr_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_be' <?php if ($medihash['sa_be']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_be' <?php if ($medihash['so_be']) { echo 'checked'; } ?>></input></td>
+              </tr>
+              <tr>
+                <th>Kontrolle</th>
+                <td><input type='checkbox' name='mo_ko' <?php if ($medihash['mo_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='di_ko' <?php if ($medihash['di_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='mi_ko' <?php if ($medihash['mi_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='do_ko' <?php if ($medihash['do_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='fr_ko' <?php if ($medihash['fr_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='sa_ko' <?php if ($medihash['sa_ko']) { echo 'checked'; } ?>></input></td>
+                <td><input type='checkbox' name='so_ko' <?php if ($medihash['so_ko']) { echo 'checked'; } ?>></input></td>
+              </tr>
             </table>
           </div>
         </div>

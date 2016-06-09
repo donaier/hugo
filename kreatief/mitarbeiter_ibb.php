@@ -87,7 +87,7 @@
                            "', v5_3 = '" . $_POST['v5_3'] . 
                            "', v5_4 = '" . $_POST['v5_4'] . 
                            "', creator = '" . $creator . 
-                           "', status = '" . $status . 
+                           "', status = '" . $_POST['status'] . 
                            "' WHERE `ma_ibb`.`id` = " . $_POST['id'] . "";
           } else {
             $post_query = "INSERT INTO ma_ibb (" . $fields . ") VALUES (" . join(', ', $values) . ")";

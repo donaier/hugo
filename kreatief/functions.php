@@ -132,13 +132,13 @@
 
   function crunch_medi_data() {
     $medi_data = [
-                   'mo_mo' => isset($_POST['mo_mo']), 'mo_mi' => isset($_POST['mo_mi']), 'mo_ab' => isset($_POST['mo_ab']), 'mo_na' => isset($_POST['mo_na']), 'mo_re' => isset($_POST['mo_re']),
-                   'di_mo' => isset($_POST['di_mo']), 'di_mi' => isset($_POST['di_mi']), 'di_ab' => isset($_POST['di_ab']), 'di_na' => isset($_POST['di_na']), 'di_re' => isset($_POST['di_re']),
-                   'mi_mo' => isset($_POST['mi_mo']), 'mi_mi' => isset($_POST['mi_mi']), 'mi_ab' => isset($_POST['mi_ab']), 'mi_na' => isset($_POST['mi_na']), 'mi_re' => isset($_POST['mi_re']),
-                   'do_mo' => isset($_POST['do_mo']), 'do_mi' => isset($_POST['do_mi']), 'do_ab' => isset($_POST['do_ab']), 'do_na' => isset($_POST['do_na']), 'do_re' => isset($_POST['do_re']),
-                   'fr_mo' => isset($_POST['fr_mo']), 'fr_mi' => isset($_POST['fr_mi']), 'fr_ab' => isset($_POST['fr_ab']), 'fr_na' => isset($_POST['fr_na']), 'fr_re' => isset($_POST['fr_re']),
-                   'sa_mo' => isset($_POST['sa_mo']), 'sa_mi' => isset($_POST['sa_mi']), 'sa_ab' => isset($_POST['sa_ab']), 'sa_na' => isset($_POST['sa_na']), 'sa_re' => isset($_POST['sa_re']),
-                   'so_mo' => isset($_POST['so_mo']), 'so_mi' => isset($_POST['so_mi']), 'so_ab' => isset($_POST['so_ab']), 'so_na' => isset($_POST['so_na']), 'so_re' => isset($_POST['so_re'])
+                   'mo_mo' => isset($_POST['mo_mo']), 'mo_mi' => isset($_POST['mo_mi']), 'mo_ab' => isset($_POST['mo_ab']), 'mo_na' => isset($_POST['mo_na']), 'mo_re' => isset($_POST['mo_re']), 'mo_ri' => isset($_POST['mo_ri']), 'mo_be' => isset($_POST['mo_be']), 'mo_ko' => isset($_POST['mo_ko']),
+                   'di_mo' => isset($_POST['di_mo']), 'di_mi' => isset($_POST['di_mi']), 'di_ab' => isset($_POST['di_ab']), 'di_na' => isset($_POST['di_na']), 'di_re' => isset($_POST['di_re']), 'di_ri' => isset($_POST['di_ri']), 'di_be' => isset($_POST['di_be']), 'di_ko' => isset($_POST['di_ko']),
+                   'mi_mo' => isset($_POST['mi_mo']), 'mi_mi' => isset($_POST['mi_mi']), 'mi_ab' => isset($_POST['mi_ab']), 'mi_na' => isset($_POST['mi_na']), 'mi_re' => isset($_POST['mi_re']), 'mi_ri' => isset($_POST['mi_ri']), 'mi_be' => isset($_POST['mi_be']), 'mi_ko' => isset($_POST['mi_ko']),
+                   'do_mo' => isset($_POST['do_mo']), 'do_mi' => isset($_POST['do_mi']), 'do_ab' => isset($_POST['do_ab']), 'do_na' => isset($_POST['do_na']), 'do_re' => isset($_POST['do_re']), 'do_ri' => isset($_POST['do_ri']), 'do_be' => isset($_POST['do_be']), 'do_ko' => isset($_POST['do_ko']),
+                   'fr_mo' => isset($_POST['fr_mo']), 'fr_mi' => isset($_POST['fr_mi']), 'fr_ab' => isset($_POST['fr_ab']), 'fr_na' => isset($_POST['fr_na']), 'fr_re' => isset($_POST['fr_re']), 'fr_ri' => isset($_POST['fr_ri']), 'fr_be' => isset($_POST['fr_be']), 'fr_ko' => isset($_POST['fr_ko']),
+                   'sa_mo' => isset($_POST['sa_mo']), 'sa_mi' => isset($_POST['sa_mi']), 'sa_ab' => isset($_POST['sa_ab']), 'sa_na' => isset($_POST['sa_na']), 'sa_re' => isset($_POST['sa_re']), 'sa_ri' => isset($_POST['sa_ri']), 'sa_be' => isset($_POST['sa_be']), 'sa_ko' => isset($_POST['sa_ko']),
+                   'so_mo' => isset($_POST['so_mo']), 'so_mi' => isset($_POST['so_mi']), 'so_ab' => isset($_POST['so_ab']), 'so_na' => isset($_POST['so_na']), 'so_re' => isset($_POST['so_re']), 'so_ri' => isset($_POST['so_ri']), 'so_be' => isset($_POST['so_be']), 'so_ko' => isset($_POST['so_ko'])
                  ];
 
     return serialize($medi_data);

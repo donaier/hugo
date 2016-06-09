@@ -104,6 +104,36 @@
                 <td><input type='checkbox' name='sa_re'></input></td>
                 <td><input type='checkbox' name='so_re'></input></td>
               </tr>
+              <tr>
+                <th>Richten</th>
+                <td><input type='checkbox' name='mo_ri'></input></td>
+                <td><input type='checkbox' name='di_ri'></input></td>
+                <td><input type='checkbox' name='mi_ri'></input></td>
+                <td><input type='checkbox' name='do_ri'></input></td>
+                <td><input type='checkbox' name='fr_ri'></input></td>
+                <td><input type='checkbox' name='sa_ri'></input></td>
+                <td><input type='checkbox' name='so_ri'></input></td>
+              </tr>
+              <tr>
+                <th>Bestellen</th>
+                <td><input type='checkbox' name='mo_be'></input></td>
+                <td><input type='checkbox' name='di_be'></input></td>
+                <td><input type='checkbox' name='mi_be'></input></td>
+                <td><input type='checkbox' name='do_be'></input></td>
+                <td><input type='checkbox' name='fr_be'></input></td>
+                <td><input type='checkbox' name='sa_be'></input></td>
+                <td><input type='checkbox' name='so_be'></input></td>
+              </tr>
+              <tr>
+                <th>Kontrolle</th>
+                <td><input type='checkbox' name='mo_ko'></input></td>
+                <td><input type='checkbox' name='di_ko'></input></td>
+                <td><input type='checkbox' name='mi_ko'></input></td>
+                <td><input type='checkbox' name='do_ko'></input></td>
+                <td><input type='checkbox' name='fr_ko'></input></td>
+                <td><input type='checkbox' name='sa_ko'></input></td>
+                <td><input type='checkbox' name='so_ko'></input></td>
+              </tr>
             </table>
           </div>
         </div>
